@@ -5,14 +5,24 @@ import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+ /*   options: FirebaseOptions(
+      apiKey: "AIzaSyCA7oocH2W1OMjKdCndNCNhEh8zqJX2KYE",
+      authDomain: "login-app-3a92a.firebaseapp.com",
+      databaseURL: "https://login-app-3a92a-default-rtdb.firebaseio.com",
+      projectId: "login-app-3a92a",
+      storageBucket: "login-app-3a92a.appspot.com",
+      messagingSenderId: "982205682314",
+      appId: "1:982205682314:web:c2bd99dfd166e0e6a31373",
+    ),*/
+  );
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
